@@ -1,0 +1,90 @@
+:root{
+    --v:3;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#f69d3c, #3f87a6);
+    animation: animate 20s ease infinite;
+    height: 100vh;
+}
+@keyframes animate {
+    0%{
+        background: rgba(246, 60, 60, 0.498);
+    }
+    20%{
+        background: rgba(246, 218, 60, 0.51);
+    }
+    40%{
+        background: rgba(72, 166, 63, 0.51);
+    }
+    60%{
+        background: rgba(60, 227, 246, 0.482);
+    }
+    80%{
+        background: rgba(120, 63, 166, 0.476);
+    }
+    100%{
+        background: rgba(246, 60, 60, 0.505);
+    }
+}
+.container{
+    display:block;
+    position: relative;
+    width: fit-content;
+    margin:calc(var(--v)*30px);
+}
+.clockbox{
+    width:calc(var(--v)*420px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 8px;
+}
+.container .clock{
+    height: calc(var(--v)*22px);
+    width: calc(var(--v)*22px);
+    background: rgba(255, 255, 255, 0.5);
+    margin: calc(var(--v)*0.66666px);
+    box-shadow: inset -2px 2px 3px rgba(0, 0, 0, 0.47),-2px 2px 3px rgba(0, 0, 0, 0.47);
+    border-radius: calc(var(--v)*90px);
+    position: relative;
+}
+.big{
+    height: calc(var(--v)*1px);
+    width: calc(var(--v)*20px);
+    background: conic-gradient(black 0deg 180deg,transparent 180deg 360deg);
+    border-radius: calc(var(--v)*33px);
+    position: relative;
+    top: calc(var(--v)*11px);
+    left:calc(var(--v)*1.5px);
+    transform: rotate(0deg);
+    transition: 5s;
+}
+.small{
+    height: calc(var(--v)*1px);
+    width: calc(var(--v)*16px);
+    background: conic-gradient(black 0deg 180deg,transparent 180deg 360deg);
+    border-radius: calc(var(--v)*33px);
+    position: relative;
+    top: calc(var(--v)*10px);
+    left: calc(var(--v)*3.5px);
+    transform: rotate(0deg);
+    transition: 5s;
+}
+.dot{
+    height: calc(var(--v)*1px);
+    width: calc(var(--v)*1px);
+    background: black;
+    border-radius: calc(var(--v)*33px);
+    position: absolute;
+    top: calc(var(--v)*11px);
+    left: calc(var(--v)*11px);
+}
+@media all and (max-width:1476px){
+    :root{
+        --v:2;
+    }
+}
