@@ -97,4 +97,11 @@ body{
     :root{
         --v:0.7;
     }
+    .container{
+        display:block;
+        position: relative;
+        width: fit-content;
+        margin:calc(var(--v)*30px);
+        margin-left:calc(var(--v)*10px);
+}
 }
