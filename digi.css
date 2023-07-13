@@ -48,7 +48,7 @@ body{
     width: calc(var(--v)*22px);
     background: rgba(255, 255, 255, 0.5);
     margin: calc(var(--v)*0.66666px);
-    box-shadow: inset -2px 2px 3px rgba(0, 0, 0, 0.47),-2px 2px 3px rgba(0, 0, 0, 0.47);
+    box-shadow: inset calc(var(--v)*-0.66666px) calc(var(--v)*0.66666px) calc(var(--v)*1px) rgba(0, 0, 0, 0.47),calc(var(--v)*-0.66666px) calc(var(--v)*0.66666px) calc(var(--v)*1px) rgba(0, 0, 0, 0.47);
     border-radius: calc(var(--v)*90px);
     position: relative;
 }
