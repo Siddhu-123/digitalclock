@@ -88,3 +88,8 @@ body{
         --v:2;
     }
 }
+@media all and (max-width:1000px){
+    :root{
+        --v:1;
+    }
+}
