@@ -1,6 +1,9 @@
 :root{
     --v:3;
 }
+::-webkit-scrollbar{
+  display: none;
+}
 body{
     display: flex;
     justify-content: center;
